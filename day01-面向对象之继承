@@ -1,0 +1,31 @@
+从上海到北京 一个问题揭开了神秘的面纱
+首先先到的就是如何去，交通工具
+从C语言的思想来讲就是面向过程 坐火车，坐飞机，步行
+java的思想是面向对象 火车，飞机，人
+public class Person{
+  //private权限修饰符，私有化属性，只能当前类使用，其他类要使用这个类属性，需要生成get、set方法
+  //以人为例定义他的属性
+  private String name;
+  private int age;
+  
+  public String getName(){
+    return name;
+  }
+  public void setName(String name){
+    this.name = name;
+  }
+  public int getAge(){
+    return age;
+  }
+  public void setage(int age){
+    this.age = age;
+  }
+}
+
+public class PersonTest{
+  public static void main(String[] args){
+    Person p = new Person();
+    p.setName("apple");
+    p.setAge(18);
+  }
+}
