@@ -29,3 +29,6 @@ public class PersonTest{
     p.setAge(18);
   }
 }
+默认有空参构造,定义有参构造在new 对象的时候可以直接往里面赋值,例如
+Person p = new Person("mark",18);
+this表示本类对象,谁调用就是谁
